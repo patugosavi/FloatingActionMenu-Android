@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6295F8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/ic_zero_inbox"/>
+
+
+
+    <com.example.floatingactionmenu.RevealBackgroundView
+        android:id="@+id/fading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.example.floatingactionmenu.FloatingActionMenu
+        android:id="@+id/fam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:fab_labelStyle="@style/fab_labels_style">
+
+        <com.example.floatingactionmenu.FloatingActionToggleButton
+            android:id="@+id/faba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:fab_labelText="Fab One"
+            app:fab_normal_icon="@drawable/ic_add_white_18dp"
+            app:fab_toggle_icon="@drawable/ic_mode_edit_white_18dp"
+            app:fab_type="mini" />
+
+        <com.example.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fabb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:fab_colorNormal="@color/remainder"
+            app:fab_colorPressed="@color/remainder_press"
+            app:fab_labelText="Fab Two"
+            app:fab_normal_icon="@drawable/ic_mode_edit_white_18dp"
+            app:fab_type="mini" />
+
+        <com.example.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fabc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:fab_colorNormal="@color/ticket"
+            app:fab_colorPressed="@color/ticket_press"
+            app:fab_labelText="Fab Three"
+            app:fab_normal_icon="@drawable/ic_add_white_18dp"
+            app:fab_type="mini" />
+
+        <com.example.floatingactionmenu.FloatingActionToggleButton
+            android:id="@+id/fab_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:fab_normal_icon="@drawable/ic_add_white_24dp"
+            app:fab_toggle_icon="@drawable/ic_mode_edit_white_24dp" />
+    </com.example.floatingactionmenu.FloatingActionMenu>
+
+</RelativeLayout>
